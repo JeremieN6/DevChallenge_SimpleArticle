@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --font-size-title:2.25rem;
+    --font-size-small-title:1.25rem;
+    --font-size-small-text:0.875rem;
+
+    --black-color: #000000;
+    --white-color: #F8FAFC;
+    --date-color: #6C727F;
+    --light-grey-color: #D9D9D9;
+
+    --font-weight-semi-bold: 600;
+    --font-weight-medium: 500;
+}
+*{
+    font-family: "Poppins", serif;
+}
+body{
+    background-color: var(--white-color);
+}
+.contentArticles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.containerTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.containerArticles{
+    display: flex;
+    justify-content: center;
+    padding: 5px 30px;
+}
+.title {
+    font-size: var(--font-size-title);
+    margin-bottom: 0;
+}
+.containerSeparator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+.article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.contentArticle{
+    width: 60%;
+}
+
+
+.contentArticleTitle {
+    width: 100%;
+}
+p.titleArticle {
+    font-size: var(--font-size-small-title);
+    font-weight: var(--font-weight-semi-bold);
+    margin-bottom: 0;
+}
+p.dateArticle {
+    font-size: var(--font-size-small-text);
+    color: var(--date-color);
+    font-weight: var(--font-weight-medium);
+}
+.contentImageArticle{
+    border-radius: 20px;
+}
+@media (min-width: 768px){
+    .containerArticles {
+        padding: 5px 100px;
+    }
+    .contentArticles {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 25px 140px;
+        gap: 30px;
+    }
+    .article{
+        justify-content: flex-start;
+    }
+    /* .contentArticle{
+        width: inherit;
+    } */
+}
+</style>
+<body>
+    <div class="containerPage">
+        <div class="contentPage">
+            <div class="containerTitle">
+                <h1 class="title">We release interesting articles <br> about technology</h1>
+            </div>
+            <div class="containerSeparator">
+                <img src="./assets/images/Seperator.svg" alt="Separator" class="contentSeparator">
+            </div>
+            <div class="containerArticles">
+                <div class="contentArticles">
+                    <div class="article">
+                        <div class="containerImageArticle">
+                            <img src="./assets/images/photo_1.png" alt="Image Article 1" class="contentImageArticle">
+                        </div>
+                        <div class="contentArticle">
+                            <div class="containerArticleTitle">
+                                <div class="contentArticleTitle">
+                                    <p class="titleArticle">Unlocking the Power of Cloud Computing: A Guide to Scalable Solutions</p>
+                                </div>
+                            </div>
+                            <div class="container_dateArticle">
+                                <div class="content_dateArticle">
+                                    <p class="dateArticle">November 12, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="containerImageArticle">
+                            <img src="./assets/images/photo_2.png" alt="Image Article 2" class="contentImageArticle">
+                        </div>
+                        <div class="contentArticle">
+                            <div class="containerArticleTitle">
+                                <div class="contentArticleTitle">
+                                    <p class="titleArticle">The Future of AI: How Machine Learning is Revolutionizing Industries</p>
+                                </div>
+                            </div>
+                            <div class="container_dateArticle">
+                                <div class="content_dateArticle">
+                                    <p class="dateArticle">November 12, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="containerImageArticle">
+                            <img src="./assets/images/photo_3.png" alt="Image Article 3" class="contentImageArticle">
+                        </div>
+                        <div class="contentArticle">
+                            <div class="containerArticleTitle">
+                                <div class="contentArticleTitle">
+                                    <p class="titleArticle">The Impact of 5G on Business: How Faster Networks are Transforming the Way We Work</p>
+                                </div>
+                            </div>
+                            <div class="container_dateArticle">
+                                <div class="content_dateArticle">
+                                    <p class="dateArticle">November 12, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
